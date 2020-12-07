@@ -105,7 +105,7 @@ When running the backend, create a user and get access to the home and quotes. W
 
 ## :pencil: Open tasks
 
-🖊 Veja no [trello!](https://trello.com/b/VfnBeDPz/onerestaurant)
+🖊 Veja no [trello!](https://trello.com/b/8N6EHCXp/criptoindex)
 
 ## :octopus: Developers
 
