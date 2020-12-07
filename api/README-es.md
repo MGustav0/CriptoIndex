@@ -144,7 +144,7 @@ Para insertar el token generado por la API en la ruta _Authenticate_, haga clic 
 
 ## :pencil: Tareas abiertas
 
-🖊 Veja no [trello!](https://trello.com/b/8N6EHCXp/criptoindex)
+🖊 Veja no [trello!](https://trello.com/b/i927X7pr/criptoindex)
 
 ## :octopus: Desarrolladores
 

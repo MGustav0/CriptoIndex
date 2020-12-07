@@ -109,7 +109,7 @@ Cuando ejecute el backend, cree un usuario y obtenga acceso a la página de inic
 
 ## :pencil: Tareas abiertas
 
-🖊 Veja no [trello!](https://trello.com/b/8N6EHCXp/criptoindex)
+🖊 Veja no [trello!](https://trello.com/b/i927X7pr/criptoindex)
 
 ## :octopus: Desarrolladores
 

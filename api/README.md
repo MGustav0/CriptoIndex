@@ -144,7 +144,7 @@ Para inserir o token gerado pela API na rota _Authenticate_, clique em _Dev_, ab
 
 ## :pencil: Tarefas em aberto
 
-🖊 Veja no [trello!](https://trello.com/b/8N6EHCXp/criptoindex)
+🖊 Veja no [trello!](https://trello.com/b/i927X7pr/criptoindex)
 
 ## :octopus: Desenvolvedor
 

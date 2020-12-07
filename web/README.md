@@ -105,7 +105,7 @@ Ao rodar o back-end, crie um usuário e obtenha acesso a home e às cotações. 
 
 ## :pencil: Tarefas em aberto
 
-🖊 Veja no [trello!](https://trello.com/b/8N6EHCXp/criptoindex)
+🖊 Veja no [trello!](https://trello.com/b/i927X7pr/criptoindex)
 
 ## :octopus: Desenvolvedores
 
