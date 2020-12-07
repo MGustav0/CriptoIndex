@@ -30,9 +30,9 @@ Front-end web: ![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-React
   
   This project is based on the instructions from the [Trybe challenge](https://github.com/betrybe/technical-test) for creating a currency indexing project based on the BTC. it is a full-stack project, so there is an own API and another that will be publicly accessed, in this case it will be [CoinDesk's](https://www.coindesk.com/coindesk-api), the front end will be an exhibitor for the APIs.
 
-  To access the documentation in english, [click here]().
+  To access the documentation in english, [click here](https://github.com/MGustav0/CriptoIndex/blob/main/README-us.md).
   
-  Para acceder a la documentación en español, [clic aquí]().
+  Para acceder a la documentación en español, [clic aquí](https://github.com/MGustav0/CriptoIndex/blob/main/README-es.md).
 
 </p>
 
