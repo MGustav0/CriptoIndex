@@ -52,7 +52,7 @@ Front-end web: ![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-React
 
 To run the application just access the folders below, in that order, and follow the respective README.md:
 
-- [server](https://github.com/MGustav0/CriptoIndex/blob/main/api) - pto install the server;
+- [server](https://github.com/MGustav0/CriptoIndex/blob/main/api) - to install the server;
 - [web](https://github.com/MGustav0/CriptoIndex/blob/main/web) - to install the web front-end;
 
 ## :scroll: Application Layout

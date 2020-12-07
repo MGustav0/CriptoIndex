@@ -28,7 +28,7 @@ Front-end web: ![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-React
 
 <p align="justify">
   
-  Neste projeto é baseado nas instruções do [desafio da Trybe](https://github.com/MGustav0/oneRestaurant/blob/main/Desafio.md) para a criação de um projeto de indexação de moedas com base no BTC. é um projeto full-stack, portanto há uma API própria e outra que será acessada publicamente, no caso será a da [CoinDesk](https://www.coindesk.com/coindesk-api), o front-end será um expositor para as APIs.
+  Neste projeto é baseado nas instruções do [desafio da Trybe](https://github.com/betrybe/technical-test) para a criação de um projeto de indexação de moedas com base no BTC. é um projeto full-stack, portanto há uma API própria e outra que será acessada publicamente, no caso será a da [CoinDesk](https://www.coindesk.com/coindesk-api), o front-end será um expositor para as APIs.
 
   To access the documentation in english, [click here]().
   
