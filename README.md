@@ -29,6 +29,8 @@ Front-end web: ![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-React
 <p align="justify">
   
   Neste projeto é baseado nas instruções do [desafio da Trybe](https://github.com/betrybe/technical-test) para a criação de um projeto de indexação de moedas com base no BTC. é um projeto full-stack, portanto há uma API própria e outra que será acessada publicamente, no caso será a da [CoinDesk](https://www.coindesk.com/coindesk-api), o front-end será um expositor para as APIs.
+  
+  Disclaimer: Uma das regras de negócio é um token de 16 caracteres contendo letras e números aleatórios, porém utilizei a biblioteca [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) como padrão de segurança, portanto contém um Bearer Token de autenticação, o que descumpre a regra de negócio.
 
   To access the documentation in english, [click here](https://github.com/MGustav0/CriptoIndex/blob/main/README-us.md).
   
