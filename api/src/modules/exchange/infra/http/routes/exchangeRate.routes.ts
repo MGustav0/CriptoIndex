@@ -1,7 +1,7 @@
 import { Router } from 'express';
+import { container } from 'tsyringe';
 
 import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAuthenticated';
-import CurrenciesRepository from '@modules/exchange/infra/data/repositories/CurrenciesRepository';
 import CreateCurrencyRateService from '@modules/exchange/service/CreateCurrencyRateService';
 import UpdateCurrencyRateService from '@modules/exchange/service/UpdateCurrencyRateService';
 
@@ -10,7 +10,6 @@ import CreateEndpointReturnService from '@modules/exchange/service/CreateEndpoin
 import apiCoinDesk from '@shared/infra/http/services/apiCoinDesk';
 
 const exchangeRateRouter = Router();
-const currenciesRepository = new CurrenciesRepository();
 
 exchangeRateRouter.use(ensureAuthenticated);
 
@@ -29,7 +28,7 @@ exchangeRateRouter.get('/', (_, response) => {
     const eurPrice = eur.data.bpi.EUR.rate;
     const cadPrice = cad.data.bpi.CAD.rate;
 
-    const createCurrency = new CreateCurrencyRateService(currenciesRepository);
+    const createCurrency = container.resolve(CreateCurrencyRateService);
 
     createCurrency.execute({ usdPrice, brlPrice, eurPrice, cadPrice });
 
@@ -48,9 +47,7 @@ exchangeRateRouter.get('/', (_, response) => {
 
     const btcBpi = btc.data.bpi.BTC;
 
-    const createEndpointReturn = new CreateEndpointReturnService(
-      currenciesRepository,
-    );
+    const createEndpointReturn = container.resolve(CreateEndpointReturnService);
 
     const endpointReturn = createEndpointReturn.execute({
       usdTime,
@@ -75,9 +72,7 @@ exchangeRateRouter.get('/', (_, response) => {
 exchangeRateRouter.put('/', async (require, response) => {
   const { currency, value } = require.body;
 
-  const updateCurrencyReturn = new UpdateCurrencyRateService(
-    currenciesRepository,
-  );
+  const updateCurrencyReturn = container.resolve(UpdateCurrencyRateService);
 
   await updateCurrencyReturn.execute({
     currency,

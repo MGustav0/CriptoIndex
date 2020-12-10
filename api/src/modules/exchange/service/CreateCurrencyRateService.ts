@@ -1,3 +1,5 @@
+import { injectable, inject } from 'tsyringe';
+
 import Currencies from '@modules/exchange/infra/data/entities/Currencies';
 
 import CurrenciesRepository from '@modules/exchange/repositories/ICurrenciesRepository';
@@ -9,12 +11,12 @@ interface IRequestDTO {
   cadPrice: string;
 }
 
+@injectable()
 class CreateCurrencyRateService {
-  private currenciesRepository: CurrenciesRepository;
-
-  constructor(currenciesRepository: CurrenciesRepository) {
-    this.currenciesRepository = currenciesRepository;
-  }
+  constructor(
+    @inject('CurrenciesRepository')
+    private currenciesRepository: CurrenciesRepository,
+  ) {}
 
   public execute({
     usdPrice,
@@ -30,7 +32,7 @@ class CreateCurrencyRateService {
     const EUR = eurExchangeRate.toFixed(3);
     const CAD = cadExchangeRate.toFixed(3);
 
-    const currenciesJSON = this.currenciesRepository.create({
+    const currenciesJSON = this.currenciesRepository.save({
       BRL,
       EUR,
       CAD,

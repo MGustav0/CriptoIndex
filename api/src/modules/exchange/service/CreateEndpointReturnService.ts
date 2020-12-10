@@ -1,3 +1,5 @@
+import { injectable, inject } from 'tsyringe';
+
 import CurrenciesRepository from '@modules/exchange/repositories/ICurrenciesRepository';
 
 interface IRequestDTO {
@@ -39,12 +41,12 @@ type IResponse = {
   BTC: string;
 };
 
+@injectable()
 class CreateEndpointReturnService {
-  private currenciesRepository: CurrenciesRepository;
-
-  constructor(currenciesRepository: CurrenciesRepository) {
-    this.currenciesRepository = currenciesRepository;
-  }
+  constructor(
+    @inject('CurrenciesRepository')
+    private currenciesRepository: CurrenciesRepository,
+  ) {}
 
   public execute({
     usdTime,

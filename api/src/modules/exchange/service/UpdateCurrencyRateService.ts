@@ -1,3 +1,5 @@
+import { injectable, inject } from 'tsyringe';
+
 import Currencies from '@modules/exchange/infra/data/entities/Currencies';
 
 import CurrenciesRepository from '@modules/exchange/repositories/ICurrenciesRepository';
@@ -6,12 +8,12 @@ import IRequestDTO from '@modules/exchange/dtos/IRequestDTO';
 
 import AppError from '@shared/errors/AppError';
 
+@injectable()
 class UpdateCurrencyRateService {
-  private currenciesRepository: CurrenciesRepository;
-
-  constructor(currenciesRepository: CurrenciesRepository) {
-    this.currenciesRepository = currenciesRepository;
-  }
+  constructor(
+    @inject('CurrenciesRepository')
+    private currenciesRepository: CurrenciesRepository,
+  ) {}
 
   public execute({ currency, value }: IRequestDTO): Currencies {
     if (!(currency === 'BRL' || currency === 'EUR' || currency === 'CAD')) {
@@ -31,7 +33,7 @@ class UpdateCurrencyRateService {
       }
     }
 
-    const currenciesJSON = this.currenciesRepository.create(currencies);
+    const currenciesJSON = this.currenciesRepository.save(currencies);
 
     return currenciesJSON;
   }

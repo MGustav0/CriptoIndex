@@ -28,7 +28,7 @@ class CurrenciesRepository implements ICurrenciesRepository {
     this.currencies = this.readFile();
   }
 
-  public create({ BRL, EUR, CAD }: ICurrenciesDTO): Currencies {
+  public save({ BRL, EUR, CAD }: ICurrenciesDTO): Currencies {
     this.currencies = new Currencies({ BRL, EUR, CAD });
 
     this.writeFile(this.currencies);
