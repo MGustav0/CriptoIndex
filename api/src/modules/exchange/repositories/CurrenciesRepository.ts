@@ -3,10 +3,10 @@ import path from 'path';
 
 import Currencies from '@modules/exchange/infra/data/entities/Currencies';
 
-interface ICreateCurrenciesDTO {
-  brlRate: string;
-  eurRate: string;
-  cadRate: string;
+interface ICurrenciesDTO {
+  BRL: string;
+  EUR: string;
+  CAD: string;
 }
 
 class CurrenciesRepository {
@@ -16,42 +16,32 @@ class CurrenciesRepository {
     `${__dirname}../../infra/data/currencies.json`,
   )}`;
 
+  readFile = () => {
+    const file = fs.readFileSync(this.currenciesPath);
+
+    return JSON.parse(file.toString());
+  };
+
+  writeFile = content => {
+    const updateFile = JSON.stringify(content);
+
+    fs.writeFileSync(this.currenciesPath, updateFile);
+  };
+
   constructor() {
-    const readFile = () => {
-      const file = fs.readFileSync(this.currenciesPath);
-
-      return JSON.parse(file.toString());
-    };
-
-    this.currencies = readFile();
+    this.currencies = this.readFile();
   }
 
-  public create({
-    brlRate,
-    eurRate,
-    cadRate,
-  }: ICreateCurrenciesDTO): Currencies {
-    const writeFile = content => {
-      const updateFile = JSON.stringify(content);
+  public create({ BRL, EUR, CAD }: ICurrenciesDTO): Currencies {
+    this.currencies = new Currencies({ BRL, EUR, CAD });
 
-      fs.writeFileSync(this.currenciesPath, updateFile);
-    };
-
-    this.currencies = new Currencies({ brlRate, eurRate, cadRate });
-
-    writeFile(this.currencies);
+    this.writeFile(this.currencies);
 
     return this.currencies;
   }
 
   public findCurrencies(): Currencies {
-    const readFile = () => {
-      const file = fs.readFileSync(this.currenciesPath);
-
-      return JSON.parse(file.toString());
-    };
-
-    this.currencies = readFile();
+    this.currencies = this.readFile();
 
     return this.currencies;
   }

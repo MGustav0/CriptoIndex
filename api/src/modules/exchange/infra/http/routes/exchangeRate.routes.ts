@@ -2,6 +2,7 @@ import { Router } from 'express';
 
 import CurrenciesRepository from '@modules/exchange/repositories/CurrenciesRepository';
 import CreateCurrencyRateService from '@modules/exchange/service/CreateCurrencyRateService';
+import UpdateCurrencyRateService from '@modules/exchange/service/UpdateCurrencyRateService';
 
 import CreateEndpointReturnService from '@modules/exchange/service/CreateEndpointReturnService';
 
@@ -66,6 +67,21 @@ exchangeRateRouter.get('/', (_, response) => {
   }
 
   loadCurrencies();
+});
+
+exchangeRateRouter.put('/', async (require, response) => {
+  const { currency, value } = require.body;
+
+  const updateCurrencyReturn = new UpdateCurrencyRateService(
+    currenciesRepository,
+  );
+
+  await updateCurrencyReturn.execute({
+    currency,
+    value,
+  });
+
+  return response.status(200).json({ message: 'Valor alterado com sucesso!' });
 });
 
 export default exchangeRateRouter;

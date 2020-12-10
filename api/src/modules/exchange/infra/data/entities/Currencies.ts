@@ -1,14 +1,14 @@
 class Currencies {
-  brlRate: string;
+  BRL: string;
 
-  eurRate: string;
+  EUR: string;
 
-  cadRate: string;
+  CAD: string;
 
-  constructor({ brlRate, eurRate, cadRate }: Currencies) {
-    this.brlRate = brlRate;
-    this.eurRate = eurRate;
-    this.cadRate = cadRate;
+  constructor({ BRL, EUR, CAD }: Currencies) {
+    this.BRL = BRL;
+    this.EUR = EUR;
+    this.CAD = CAD;
   }
 }
 

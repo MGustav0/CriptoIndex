@@ -66,9 +66,9 @@ class CreateEndpointReturnService {
 
     const USD = usdBpi;
 
-    const dataBrl = dataCurrencies.brlRate;
-    const dataEur = dataCurrencies.cadRate;
-    const dataCad = dataCurrencies.eurRate;
+    const dataBrl = dataCurrencies.BRL;
+    const dataEur = dataCurrencies.EUR;
+    const dataCad = dataCurrencies.CAD;
 
     const rateBrl = parseFloat(dataBrl) * parseFloat(usdPrice.replace(/,/, ''));
 

@@ -26,14 +26,14 @@ class CreateCurrencyRateService {
     const eurExchangeRate = parseFloat(eurPrice) / parseFloat(usdPrice);
     const cadExchangeRate = parseFloat(cadPrice) / parseFloat(usdPrice);
 
-    const brlRate = brlExchangeRate.toFixed(3);
-    const eurRate = eurExchangeRate.toFixed(3);
-    const cadRate = cadExchangeRate.toFixed(3);
+    const BRL = brlExchangeRate.toFixed(3);
+    const EUR = eurExchangeRate.toFixed(3);
+    const CAD = cadExchangeRate.toFixed(3);
 
     const currenciesJSON = this.currenciesRepository.create({
-      brlRate,
-      eurRate,
-      cadRate,
+      BRL,
+      EUR,
+      CAD,
     });
 
     return currenciesJSON;
