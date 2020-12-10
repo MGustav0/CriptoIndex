@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
 import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAuthenticated';
-import CurrenciesRepository from '@modules/exchange/repositories/CurrenciesRepository';
+import CurrenciesRepository from '@modules/exchange/infra/data/repositories/CurrenciesRepository';
 import CreateCurrencyRateService from '@modules/exchange/service/CreateCurrencyRateService';
 import UpdateCurrencyRateService from '@modules/exchange/service/UpdateCurrencyRateService';
 

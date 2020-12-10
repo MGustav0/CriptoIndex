@@ -3,18 +3,14 @@ import path from 'path';
 
 import Currencies from '@modules/exchange/infra/data/entities/Currencies';
 
-interface ICurrenciesDTO {
-  BRL: string;
-  EUR: string;
-  CAD: string;
-}
+import ICurrenciesRepository from '@modules/exchange/repositories/ICurrenciesRepository';
 
-class CurrenciesRepository {
+import ICurrenciesDTO from '@modules/exchange/dtos/ICurrenciesDTO';
+
+class CurrenciesRepository implements ICurrenciesRepository {
   private currencies: Currencies;
 
-  currenciesPath = `${path.resolve(
-    `${__dirname}../../infra/data/currencies.json`,
-  )}`;
+  currenciesPath = `${path.resolve(`${__dirname}../../currencies.json`)}`;
 
   readFile = () => {
     const file = fs.readFileSync(this.currenciesPath);

@@ -1,6 +1,6 @@
 import Currencies from '@modules/exchange/infra/data/entities/Currencies';
 
-import CurrenciesRepository from '@modules/exchange/repositories/CurrenciesRepository';
+import CurrenciesRepository from '@modules/exchange/repositories/ICurrenciesRepository';
 
 interface IRequestDTO {
   usdPrice: string;
