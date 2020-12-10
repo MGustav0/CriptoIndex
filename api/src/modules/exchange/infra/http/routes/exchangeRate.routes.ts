@@ -1,5 +1,6 @@
 import { Router } from 'express';
 
+import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAuthenticated';
 import CurrenciesRepository from '@modules/exchange/repositories/CurrenciesRepository';
 import CreateCurrencyRateService from '@modules/exchange/service/CreateCurrencyRateService';
 import UpdateCurrencyRateService from '@modules/exchange/service/UpdateCurrencyRateService';
@@ -10,6 +11,8 @@ import apiCoinDesk from '@shared/infra/http/services/apiCoinDesk';
 
 const exchangeRateRouter = Router();
 const currenciesRepository = new CurrenciesRepository();
+
+exchangeRateRouter.use(ensureAuthenticated);
 
 exchangeRateRouter.get('/', (_, response) => {
   async function loadCurrencies() {
