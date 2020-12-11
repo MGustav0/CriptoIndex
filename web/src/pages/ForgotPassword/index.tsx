@@ -42,7 +42,7 @@ const ForgotPassword: React.FC = () => {
         });
 
         // Recuperação de senha
-        await api.post('/password/forgot', {
+        await api.post('/api/password/forgot', {
           email: data.email,
         });
 
@@ -93,7 +93,7 @@ const ForgotPassword: React.FC = () => {
             </Button>
           </Form>
 
-          <Link to="/">
+          <Link to="/api/login">
             <FiLogIn />
             Voltar ao login
           </Link>

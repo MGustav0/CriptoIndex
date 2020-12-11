@@ -51,13 +51,13 @@ const ResetPassword: React.FC = () => {
           throw new Error();
         }
 
-        await api.post('password/reset', {
+        await api.post('api/password/reset', {
           password,
           password_confirmation,
           token,
         });
 
-        history.push('/');
+        history.push('/api/login');
       } catch (error) {
         if (error instanceof Yup.ValidationError) {
           const errors = getValidationErrors(error);

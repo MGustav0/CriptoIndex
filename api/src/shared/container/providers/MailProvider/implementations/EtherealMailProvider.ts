@@ -41,8 +41,8 @@ class EtherealMailProvider implements IMailProvider {
         address: to.email,
       },
       from: {
-        name: from?.name || 'Equipe OneRestaurant',
-        address: from?.email || 'equipe@onerestaurant.com.br',
+        name: from?.name || 'Equipe CriptoIndex',
+        address: from?.email || 'equipe@criptoindex.com.br',
       },
       subject,
       html: await this.mailTemplateProvider.parseTemplate(templateData),

@@ -20,7 +20,7 @@ const Route: React.FC<RouteProps> = ({
   const { user } = useAuth();
 
   /** Se a rota for privada e usuário não estiver logado, envia para o login,
-   * se a rota for privada e o usuário estiver logado, envia para o dashboard
+   * se a rota for privada e o usuário estiver logado, envia para o home
    */
   return (
     <ReactDOMRoute
@@ -31,7 +31,7 @@ const Route: React.FC<RouteProps> = ({
         ) : (
           <Redirect
             to={{
-              pathname: isPrivate ? '/' : '/dashboard',
+              pathname: isPrivate ? '/api/login' : '/',
               state: { from: location },
             }}
           />

@@ -46,7 +46,7 @@ const SignIn: React.FC = () => {
           password: data.password,
         });
 
-        history.push('/dashboard');
+        history.push('/');
       } catch (error) {
         if (error instanceof Yup.ValidationError) {
           const errors = getValidationErrors(error);
@@ -91,7 +91,7 @@ const SignIn: React.FC = () => {
             <Link to="forgot-password">Esqueci minha senha</Link>
           </Form>
 
-          <Link to="/signup">
+          <Link to="/api/signup">
             <FiLogIn />
             Criar Conta
           </Link>
