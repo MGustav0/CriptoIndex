@@ -17,7 +17,7 @@ export const Content = styled.div`
   margin: 0 auto;
 
   width: 100%;
-  max-width: 700px;
+  max-width: 1440px;
 `;
 
 const appearFromLeft = keyframes`
@@ -38,9 +38,9 @@ export const AnimationContainer = styled.div`
   place-content: center;
   background-color: #ffffff;
   width: 100%;
-  max-width: 700px;
+  max-width: 1440px;
   height: 100%;
-  max-height: 700px;
+  max-height: 1024px;
   border-radius: 10px;
 
   animation: ${appearFromLeft} 1s;

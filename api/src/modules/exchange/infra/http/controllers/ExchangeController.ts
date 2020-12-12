@@ -3,7 +3,6 @@ import { container } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
 
-import CreateCurrencyRateService from '@modules/exchange/service/CreateCurrencyRateService';
 import CreateEndpointReturnService from '@modules/exchange/service/CreateEndpointReturnService';
 
 import apiCoinDesk from '@shared/infra/http/services/apiCoinDesk';
@@ -20,13 +19,6 @@ class ExchangeController {
       ]);
 
       const usdPrice = usd.data.bpi.USD.rate;
-      const brlPrice = brl.data.bpi.BRL.rate;
-      const eurPrice = eur.data.bpi.EUR.rate;
-      const cadPrice = cad.data.bpi.CAD.rate;
-
-      const createCurrency = container.resolve(CreateCurrencyRateService);
-
-      createCurrency.execute({ usdPrice, brlPrice, eurPrice, cadPrice });
 
       const usdTime = usd.data.time;
       const usdDisclaimer = usd.data.disclaimer;

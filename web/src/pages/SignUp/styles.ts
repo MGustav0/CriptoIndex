@@ -19,7 +19,7 @@ export const Content = styled.div`
   place-content: center;
 
   width: 100%;
-  max-width: 700px;
+  max-width: 1440px;
 `;
 
 const appearFromRight = keyframes`
@@ -39,9 +39,9 @@ export const AnimationContainer = styled.div`
   align-items: center;
   background-color: #ffffff;
   width: 100%;
-  max-width: 700px;
+  max-width: 1440px;
   height: 100%;
-  max-height: 700px;
+  max-height: 1024px;
   border-radius: 10px;
 
   place-content: center;

@@ -13,6 +13,8 @@ exchangeRateRouter.use(ensureAuthenticated);
 
 exchangeRateRouter.get('/', exchangeController.create);
 
-exchangeRateRouter.put('/', currenciesController.create);
+exchangeRateRouter.get('/currencies', currenciesController.show);
+
+exchangeRateRouter.put('/', currenciesController.update);
 
 export default exchangeRateRouter;

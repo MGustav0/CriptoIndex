@@ -6,6 +6,7 @@ export const Container = styled.div`
 
   display: flex;
   align-items: stretch;
+
   background-color: #e5e5e5;
 `;
 
@@ -13,8 +14,8 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
   place-content: center;
+  margin: 0 auto;
 
   width: 100%;
   max-width: 1440px;
@@ -34,8 +35,6 @@ const appearFromLeft = keyframes`
 export const AnimationContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  place-content: center;
   background-color: #ffffff;
   width: 100%;
   max-width: 1440px;
@@ -43,47 +42,60 @@ export const AnimationContainer = styled.div`
   max-height: 1024px;
   border-radius: 10px;
 
+  font-size: 50px;
+
   animation: ${appearFromLeft} 1s;
 
+  .goBack {
+    height: 78px;
+    width: 258px;
+    margin: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c4c4c4;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+
+    text-decoration: none;
+  }
+
   form {
-    margin: 80px 0;
-    width: 340px;
+    width: 100%;
+    max-width: 698px;
+    align-self: center;
     text-align: center;
 
-    h1 {
-      margin-bottom: 24px;
-      color: #000000;
+    input {
+      height: 71px;
+      font-size: 50px;
     }
 
-    a {
-      color: #000000;
-      display: block;
-      margin-top: 24px;
-      text-decoration: none;
-      transition: color 0.2s;
-
-      &:hover {
-        color: ${shade(0.2, '#f4ede8')};
-      }
+    svg {
+      width: 50px;
+      height: 50px;
     }
   }
 
-  > a {
-    color: #5fe122;
-    display: block;
-    margin-top: 24px;
-    text-decoration: none;
-    transition: color 0.2s;
+  div {
+    text-align: start;
+  }
 
-    display: flex;
-    text-align: center;
+  select {
+    width: 100%;
+    max-width: 698px;
+    height: 107px;
+    align-self: center;
+    font-size: 50px;
+    margin-bottom: 54px;
+  }
 
-    svg {
-      margin-right: 16px;
-    }
+  .actualValue {
+    margin-bottom: 48px;
+  }
 
-    &:hover {
-      color: ${shade(0.2, '#5FE122')};
-    }
+  button {
+    height: 107px;
+    font-size: 50px;
   }
 `;

@@ -12,7 +12,7 @@ interface IRequestDTO {
 }
 
 @injectable()
-class CreateCurrencyRateService {
+class UpdateCurrenciesRateService {
   constructor(
     @inject('CurrenciesRepository')
     private currenciesRepository: CurrenciesRepository,
@@ -42,4 +42,4 @@ class CreateCurrencyRateService {
   }
 }
 
-export default CreateCurrencyRateService;
+export default UpdateCurrenciesRateService;

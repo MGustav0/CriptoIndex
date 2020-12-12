@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import { shade } from 'polished';
 
 export const Container = styled.div`
   height: 100vh;
@@ -18,7 +17,7 @@ export const Content = styled.div`
   margin: 0 auto;
 
   width: 100%;
-  max-width: 700px;
+  max-width: 1440px;
 `;
 
 const appearFromLeft = keyframes`
@@ -39,12 +38,85 @@ export const AnimationContainer = styled.div`
   place-content: center;
   background-color: #ffffff;
   width: 100%;
-  max-width: 700px;
+  max-width: 1440px;
   height: 100%;
-  max-height: 700px;
+  max-height: 1024px;
   border-radius: 10px;
 
   animation: ${appearFromLeft} 1s;
+
+  button {
+    width: 100%;
+    max-width: 740px;
+    height: 99px;
+
+    border: none;
+    background-color: #c4c4c4;
+    font-size: 50px;
+  }
+
+  .btcInput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 124px;
+
+    span {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    input {
+      background: #c4c4c4;
+      border-radius: 0px;
+      border: none;
+
+      width: 100%;
+      max-width: 1078px;
+      height: 98px;
+
+      text-align: start;
+
+      width: 242px;
+
+      font-size: 50px;
+      text-align: center;
+    }
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
 `;
 
-export const CurrencyBTC = styled.div``;
+export const ContainerCurrencies = styled.div`
+  width: 100%;
+  max-width: 1078px;
+  height: 160px;
+  margin-top: 46px;
+
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 50px;
+    }
+
+    a {
+      width: 242px;
+      background-color: #c4c4c4;
+      height: 98px;
+
+      font-size: 50px;
+      text-decoration: none;
+      color: #000000;
+      padding: 20px;
+    }
+  }
+`;

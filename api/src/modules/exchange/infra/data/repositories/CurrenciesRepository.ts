@@ -37,9 +37,7 @@ class CurrenciesRepository implements ICurrenciesRepository {
   }
 
   public findCurrencies(): Currencies {
-    this.currencies = this.readFile();
-
-    return this.currencies;
+    return this.readFile();
   }
 }
 
