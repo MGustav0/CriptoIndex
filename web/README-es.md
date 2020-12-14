@@ -5,7 +5,7 @@
 
 ## Estado del proyecto
 
-> 🚧 en desarrollo
+> :heavy_check_mark: en terminado
 
 ## Tópicos
 
@@ -77,31 +77,27 @@ Cuando ejecute el backend, cree un usuario y obtenga acceso a la página de inic
 
 ### Registro
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/01_-_register.png" width="640" heigth="360" /> <img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/02_-_register_-_validate.png" width="640" heigth="360" /> <img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/03_-_register_-_validate.png" width="640" heigth="360" />
 
 ### Inicio de sesión
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/05_-_signin.png" width="640" heigth="360" />
 
 ### Contraseña olvidada
 
-<img src="" width="640" heigth="360" />
-
-### Correo electrónico de recuperación
-
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/06_-_forgot_password.png" width="640" heigth="360" />
 
 ### Recuperación de contraseñas
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/07_-_reset_password.png" width="640" heigth="360" />
 
 ### Actualización de cotizaciones
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/08_-_update_currency.png" width="640" heigth="360" />
 
 ### Visualizar monedas
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/09_-_show_currencies.png" width="640" heigth="360" />
 
 ## :pencil: Tarefas em aberto
 

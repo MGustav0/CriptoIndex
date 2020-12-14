@@ -5,7 +5,7 @@
 
 ## Project Status
 
-> 🚧 under development
+> :heavy_check_mark: finished
 
 ## Topics
 
@@ -77,31 +77,27 @@ When running the backend, create a user and get access to the home and quotes. W
 
 ### Registration
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/01_-_register.png" width="640" heigth="360" /> <img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/02_-_register_-_validate.png" width="640" heigth="360" /> <img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/03_-_register_-_validate.png" width="640" heigth="360" />
 
 ### Login
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/05_-_signin.png" width="640" heigth="360" />
 
 ### Forgot password
 
-<img src="" width="640" heigth="360" />
-
-### Recovery Email
-
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/06_-_forgot_password.png" width="640" heigth="360" />
 
 ### Password Recovery
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/07_-_reset_password.png" width="640" heigth="360" />
 
 ### Update of quotes
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/08_-_update_currency.png" width="640" heigth="360" />
 
 ### Show currencies
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/09_-_show_currencies.png" width="640" heigth="360" />
 
 ## :pencil: Open tasks
 

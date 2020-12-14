@@ -108,7 +108,7 @@ yarn test
 
 ## :sleeping: Insomnia
 
-Faça o download do [insomnia](https://insomnia.rest/download/), para utilizar o mesmo workspace utilizado no projeto clique [aqui](https://github.com/MGustav0/CriptoIndex/blob/development/extras/Insomnia_2020-11-30.json), baixe e importe no seu insomnia.
+Faça o download do [insomnia](https://insomnia.rest/download/), para utilizar o mesmo workspace utilizado no projeto clique [aqui](https://github.com/MGustav0/CriptoIndex/blob/main/extras/insomnia_-_criptoIndex.json), baixe e importe no seu insomnia.
 
 Para inserir o token gerado pela API na rota _Authenticate_, clique em _Dev_, abaixo do nome do projeto, depois em _Manage Environments_, cole seu token adquirido na autenticação e, por fim, clique em _Done_. Pronto! Você está logado na aplicação!
 
@@ -116,31 +116,31 @@ Para inserir o token gerado pela API na rota _Authenticate_, clique em _Dev_, ab
 
 ### Cadastro
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/api/01_-_register.png" width="640" heigth="360" />
 
 ### Login
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/api/02_-_signin.png" width="640" heigth="360" />
 
 ### Esqueci a senha
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/api/03_-_forgot_password.png" width="640" heigth="360" />
 
 ### E-mail de recuperação
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/api/04_-_email_forgot_pass.png" width="640" heigth="360" />
 
 ### Recuperação de senha
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/api/05_-_reset_password.png" width="640" heigth="360" />
 
 ### Atualização de cotação
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/api/06_-_update_rate.png" width="640" heigth="360" />
 
 ### Visualizar moedas
 
-<img src="" width="640" heigth="360" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/api/07_-_show_currencies.png" width="640" heigth="360" />
 
 ## :pencil: Tarefas em aberto
 

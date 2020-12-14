@@ -8,7 +8,7 @@ Front-end web: ![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-React
 
 ## Estado del proyecto
 
-> 🚧 en desarrollo
+> :heavy_check_mark: en terminado
 
 ## Tópicos
 
@@ -61,7 +61,7 @@ Para ejecutar la aplicación, acceda a las carpetas siguientes, en ese orden, y 
 
 ### 🌐 Web
 
-<img src="" width="360" heigth="640" />   <img src="" width="360" heigth="640" />
+<img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/01_-_register.png" width="360" heigth="640" />   <img src="https://github.com/MGustav0/CriptoIndex/blob/main/extras/screenshots/web/09_-_show_currencies.png" width="360" heigth="640" />
 
 ## :hammer: Resolviendo problemas
 
