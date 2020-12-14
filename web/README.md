@@ -75,7 +75,7 @@ Ao rodar o back-end, crie um usuário e obtenha acesso a home e às cotações. 
 
 ## :scroll: Layout da Aplicação
 
-### Cadastro e Validação
+### Cadastro
 
 <img src="" width="640" heigth="360" />
 
@@ -95,13 +95,13 @@ Ao rodar o back-end, crie um usuário e obtenha acesso a home e às cotações. 
 
 <img src="" width="640" heigth="360" />
 
-### Atualização de cotações
+### Atualização de cotação
 
 <img src="" width="640" heigth="360" />
 
-### Atualização de cotação de uma moeda e Validação
+### Visualizar moedas
 
-<img src="" width="640" heigth="360" /> <img src="" width="640" heigth="360" />
+<img src="" width="640" heigth="360" />
 
 ## :pencil: Tarefas em aberto
 

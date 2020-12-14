@@ -75,7 +75,7 @@ When running the backend, create a user and get access to the home and quotes. W
 
 ## :scroll: Application Layout
 
-### Registration and Validation
+### Registration
 
 <img src="" width="640" heigth="360" />
 
@@ -91,7 +91,7 @@ When running the backend, create a user and get access to the home and quotes. W
 
 <img src="" width="640" heigth="360" />
 
-### Password Recovery and Validation
+### Password Recovery
 
 <img src="" width="640" heigth="360" />
 
@@ -99,9 +99,9 @@ When running the backend, create a user and get access to the home and quotes. W
 
 <img src="" width="640" heigth="360" />
 
-### Currency quote update and Validation
+### Show currencies
 
-<img src="" width="640" heigth="360" /> <img src="" width="640" heigth="360" />
+<img src="" width="640" heigth="360" />
 
 ## :pencil: Open tasks
 

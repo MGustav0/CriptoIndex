@@ -114,33 +114,33 @@ Para inserir o token gerado pela API na rota _Authenticate_, clique em _Dev_, ab
 
 ## :scroll: Dados da API
 
-### Cadastro e Validação
+### Cadastro
 
 <img src="" width="640" heigth="360" />
 
-### Login e Validação
+### Login
 
 <img src="" width="640" heigth="360" />
 
-### Esqueci a senha e Validação
+### Esqueci a senha
 
 <img src="" width="640" heigth="360" />
 
-### E-mail de recuperação e Validação
+### E-mail de recuperação
 
 <img src="" width="640" heigth="360" />
 
-### Recuperação de senha e Validação
+### Recuperação de senha
 
 <img src="" width="640" heigth="360" />
 
-### Atualização de cotações
+### Atualização de cotação
 
 <img src="" width="640" heigth="360" />
 
-### Atualização de cotação de uma moeda e Validação
+### Visualizar moedas
 
-<img src="" width="640" heigth="360" /> <img src="" width="640" heigth="360" />
+<img src="" width="640" heigth="360" />
 
 ## :pencil: Tarefas em aberto
 

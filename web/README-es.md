@@ -75,7 +75,7 @@ Cuando ejecute el backend, cree un usuario y obtenga acceso a la página de inic
 
 ## :scroll: Layouts de la aplicación
 
-### Registro y validación
+### Registro
 
 <img src="" width="640" heigth="360" />
 
@@ -91,7 +91,7 @@ Cuando ejecute el backend, cree un usuario y obtenga acceso a la página de inic
 
 <img src="" width="640" heigth="360" />
 
-### Recuperación y validación de contraseñas
+### Recuperación de contraseñas
 
 <img src="" width="640" heigth="360" />
 
@@ -99,9 +99,9 @@ Cuando ejecute el backend, cree un usuario y obtenga acceso a la página de inic
 
 <img src="" width="640" heigth="360" />
 
-### Actualización y validación de cotizaciones de divisas
+### Visualizar monedas
 
-<img src="" width="640" heigth="360" /> <img src="" width="640" heigth="360" />
+<img src="" width="640" heigth="360" />
 
 ## :pencil: Tarefas em aberto
 

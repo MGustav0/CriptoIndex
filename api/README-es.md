@@ -114,23 +114,23 @@ Para insertar el token generado por la API en la ruta _Authenticate_, haga clic 
 
 ## :scroll: Datos de la API
 
-### Registro y validación
+### Registro
 
 <img src="" width="640" heigth="360" />
 
-### Inicio de sesión y validación
+### Inicio de sesión
 
 <img src="" width="640" heigth="360" />
 
-### Contraseña olvidada y validación
+### Contraseña olvidada
 
 <img src="" width="640" heigth="360" />
 
-### Correo electrónico de recuperación y validación
+### Correo electrónico de recuperación
 
 <img src="" width="640" heigth="360" />
 
-### Recuperación y validación de contraseñas
+### Recuperación de contraseñas
 
 <img src="" width="640" heigth="360" />
 
@@ -138,9 +138,9 @@ Para insertar el token generado por la API en la ruta _Authenticate_, haga clic 
 
 <img src="" width="640" heigth="360" />
 
-### Actualización y validación de cotizaciones de divisas
+### Visualizar monedas
 
-<img src="" width="640" heigth="360" /> <img src="" width="640" heigth="360" />
+<img src="" width="640" heigth="360" />
 
 ## :pencil: Tareas abiertas
 
