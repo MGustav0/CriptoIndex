@@ -20,7 +20,7 @@ class UpdateCurrencyRateService {
       throw new AppError('Moeda inválida', 400);
     }
 
-    if (typeof value !== 'number' || value <= 0) {
+    if (JSON.parse(value) <= 0) {
       throw new AppError('Valor inválido', 400);
     }
 

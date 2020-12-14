@@ -43,7 +43,6 @@ interface ICurrencies {
 const Home: React.FC = () => {
   const [prices, setPrices] = useState<IPrices>();
   const [currencies, setCurrencies] = useState<ICurrencies>();
-  const [inputBtc, setInputBtc] = useState<number>(1);
 
   useEffect(() => {
     api.get('/api/crypto/btc').then(response => {
@@ -59,8 +58,6 @@ const Home: React.FC = () => {
 
   const handleInputOnChange = useCallback(
     e => {
-      setInputBtc(e);
-
       const calcUSD = prices!.USD.rate_float * e;
       const calcBRL = prices!.BRL.rate_float * e;
       const calcEUR = prices!.EUR.rate_float * e;

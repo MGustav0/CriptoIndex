@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
@@ -9,6 +9,7 @@ import api from '../../services/apiClient';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import Select from '../../components/Select';
 import getValidationErrors from '../../utils/getValidationErrors';
 
 import { Container, Content, AnimationContainer } from './styles';
@@ -25,7 +26,7 @@ interface ICurrencies {
 
 interface ISubmit {
   currency: string;
-  value: string;
+  value: number;
 }
 
 const UpdateCurrency: React.FC = () => {
@@ -35,35 +36,35 @@ const UpdateCurrency: React.FC = () => {
   const [price, setPrice] = useState('');
   const [symbol, setSymbol] = useState('');
 
-  const handleSubmit = useCallback(async (data: ISubmit) => {
-    try {
-      formRef.current?.setErrors({});
+  const history = useHistory();
 
-      const schema = Yup.object().shape({
-        currency: Yup.string(),
-        value: Yup.number().positive().truncate(),
-      });
+  const handleSubmit = useCallback(
+    async (formData: ISubmit) => {
+      try {
+        formRef.current?.setErrors({});
 
-      await schema.validate(data, {
-        abortEarly: false,
-      });
+        const schema = Yup.object().shape({
+          currency: Yup.string(),
+          value: Yup.number().positive().truncate(),
+        });
 
-      const { currency, value } = data;
-      console.log(currency);
+        await schema.validate(formData, {
+          abortEarly: false,
+        });
 
-      const formData = { currency, value };
+        api.put('/api/crypto/btc', formData);
 
-      api.put('/api/crypto/btc/', formData);
+        history.push('/');
+      } catch (error) {
+        if (error instanceof Yup.ValidationError) {
+          const errors = getValidationErrors(error);
 
-      console.log(currency, value);
-    } catch (error) {
-      if (error instanceof Yup.ValidationError) {
-        const errors = getValidationErrors(error);
-
-        formRef.current?.setErrors(errors);
+          formRef.current?.setErrors(errors);
+        }
       }
-    }
-  }, []);
+    },
+    [history],
+  );
 
   useEffect(() => {
     api.get('/api/crypto/btc/currencies').then(response => {
@@ -103,16 +104,16 @@ const UpdateCurrency: React.FC = () => {
 
           <Form ref={formRef} onSubmit={handleSubmit}>
             <div>
-              <span>Moeda</span>
-              <select
+              <Select
                 name="currency"
+                label="Moeda"
                 onChange={e => handleSelectOnChange(e.target.value)}
-              >
-                <option>Selecione uma opção</option>
-                <option value="BRL">BRL</option>
-                <option value="EUR">EUR</option>
-                <option value="CAD">CAD</option>
-              </select>
+                options={[
+                  { value: 'BRL', label: 'BRL' },
+                  { value: 'EUR', label: 'EUR' },
+                  { value: 'CAD', label: 'CAD' },
+                ]}
+              />
             </div>
 
             <div className="actualValue">

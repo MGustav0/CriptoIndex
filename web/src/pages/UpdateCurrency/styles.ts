@@ -65,6 +65,7 @@ export const AnimationContainer = styled.div`
     max-width: 698px;
     align-self: center;
     text-align: center;
+    font-size: 50px;
 
     input {
       height: 71px;
