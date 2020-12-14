@@ -6,7 +6,7 @@
 
 ## Status do Projeto
 
-> 🚧 em desenvolvimento
+> :heavy_check_mark: concluído
 
 ## Tópicos
 
